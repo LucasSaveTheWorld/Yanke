@@ -10,7 +10,7 @@ struct ProcessingView: View {
     private let stageTimeline: [(Int, String)] = [
         (0,   "Uploading…"),
         (3,   "Separating vocals with Demucs…"),
-        (90,  "Tracking pitch with CREPE…"),
+        (90,  "Tracking pitch with pyin…"),
         (120, "Quantizing to notes…"),
         (150, "Almost there…"),
     ]

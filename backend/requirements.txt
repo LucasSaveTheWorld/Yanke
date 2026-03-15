@@ -1,8 +1,8 @@
+setuptools
 fastapi
 uvicorn[standard]
 python-multipart
 demucs
-crepe
 soundfile
 librosa
 numpy
