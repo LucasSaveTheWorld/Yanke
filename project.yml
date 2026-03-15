@@ -1,0 +1,39 @@
+name: Yanke
+options:
+  bundleIdPrefix: com.lucasluo
+  deploymentTarget:
+    iOS: "18.0"
+  xcodeVersion: "26.3"
+  createIntermediateGroups: true
+
+settings:
+  base:
+    SWIFT_VERSION: 6.0
+    ENABLE_BITCODE: NO
+    TARGETED_DEVICE_FAMILY: 1 # iPhone only
+
+targets:
+  Yanke:
+    type: application
+    platform: iOS
+    deploymentTarget: "18.0"
+    sources:
+      - path: Yanke
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.lucasluo.yanke
+        INFOPLIST_FILE: Yanke/Info.plist
+        DEVELOPMENT_TEAM: ""
+    info:
+      path: Yanke/Info.plist
+      properties:
+        CFBundleName: Yanke
+        CFBundleDisplayName: 燕歌
+        CFBundleShortVersionString: "1.0"
+        CFBundleVersion: "1"
+        UILaunchStoryboardName: ""
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationPortrait
+        NSAppleMusicUsageDescription: "Yanke needs access to your music library to import songs."
+        UIApplicationSceneManifest:
+          UIApplicationSupportsMultipleScenes: false

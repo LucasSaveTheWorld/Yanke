@@ -1,0 +1,8 @@
+.DS_Store
+*.xcuserstate
+xcuserdata/
+.build/
+backend/venv/
+backend/__pycache__/
+backend/*.pyc
+*.log
