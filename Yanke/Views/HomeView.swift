@@ -46,6 +46,18 @@ struct HomeView: View {
                 Text("Supports MP3, M4A, WAV, FLAC")
                     .font(.caption)
                     .foregroundStyle(.tertiary)
+
+                // DEV ONLY: load test.m4a from app Documents
+                #if DEBUG
+                if let testURL = FileManager.default
+                    .urls(for: .documentDirectory, in: .userDomainMask).first?
+                    .appendingPathComponent("test.m4a"),
+                   FileManager.default.fileExists(atPath: testURL.path) {
+                    Button("⚙️ Load test.m4a") { onFilePicked(testURL) }
+                        .font(.caption)
+                        .foregroundStyle(.secondary)
+                }
+                #endif
             }
             .padding(.horizontal, 40)
 

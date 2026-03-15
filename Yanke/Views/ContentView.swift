@@ -2,6 +2,7 @@ import SwiftUI
 import UniformTypeIdentifiers
 
 struct ContentView: View {
+    @Binding var incomingURL: URL?
     @State private var phase: AppPhase = .home
     @State private var errorMessage: String?
 
@@ -32,6 +33,11 @@ struct ContentView: View {
                         }
                     }
             }
+        }
+        .onChange(of: incomingURL) { _, url in
+            guard let url else { return }
+            incomingURL = nil
+            startProcessing(url: url)
         }
     }
 

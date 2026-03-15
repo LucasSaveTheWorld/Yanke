@@ -35,5 +35,15 @@ targets:
         UISupportedInterfaceOrientations:
           - UIInterfaceOrientationPortrait
         NSAppleMusicUsageDescription: "Yanke needs access to your music library to import songs."
+        CFBundleDocumentTypes:
+          - CFBundleTypeName: Audio File
+            CFBundleTypeRole: Viewer
+            LSHandlerRank: Alternate
+            LSItemContentTypes:
+              - public.audio
+              - public.mp3
+              - public.mpeg-4-audio
+              - com.apple.m4a-audio
+              - org.xiph.flac
         UIApplicationSceneManifest:
           UIApplicationSupportsMultipleScenes: false
