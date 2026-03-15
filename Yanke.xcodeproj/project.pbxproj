@@ -9,7 +9,9 @@
 /* Begin PBXBuildFile section */
 		1510B6914CDD9FC8418839B4 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728242F7FC5A91BF74341428 /* APIService.swift */; };
 		2DA03BB162105B0870596E4E /* ProcessingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0843E9D84A8B486EDC9FF6FF /* ProcessingView.swift */; };
+		3D0492F3B5A95F8D5C0D54DC /* ABCConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0B9799130FD30B74112FA4 /* ABCConverter.swift */; };
 		4206198A38B09B5F18249B09 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84B967907F5D4A7C99B9BBC /* ContentView.swift */; };
+		540FBFE742A9BF2F7EB8C1A4 /* SheetMusicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E476A0DCD35A8349BC2FDE /* SheetMusicView.swift */; };
 		ABB5925D4D5838A25E008502 /* YankeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39C949E2F0D91415D1F0C65 /* YankeApp.swift */; };
 		E641E9542AC21979BB7FEE79 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5568DF81988CB1A49EA29AC4 /* Note.swift */; };
 		EB2368728C3A492B9F7BD312 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312B33271F76C4C27274AE1B /* HomeView.swift */; };
@@ -18,11 +20,13 @@
 
 /* Begin PBXFileReference section */
 		0843E9D84A8B486EDC9FF6FF /* ProcessingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessingView.swift; sourceTree = "<group>"; };
+		1B0B9799130FD30B74112FA4 /* ABCConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ABCConverter.swift; sourceTree = "<group>"; };
 		312B33271F76C4C27274AE1B /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		5568DF81988CB1A49EA29AC4 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 		728242F7FC5A91BF74341428 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		97675B075162B055C290EB36 /* Yanke.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Yanke.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A6223BD5B3F54E887E7D131 /* PianoRollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PianoRollView.swift; sourceTree = "<group>"; };
+		B7E476A0DCD35A8349BC2FDE /* SheetMusicView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetMusicView.swift; sourceTree = "<group>"; };
 		C836DBFE2F3A56F2391F4E18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		E39C949E2F0D91415D1F0C65 /* YankeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YankeApp.swift; sourceTree = "<group>"; };
 		F84B967907F5D4A7C99B9BBC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -40,6 +44,7 @@
 		5F9CD6460986C33F5E4BD15E /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				1B0B9799130FD30B74112FA4 /* ABCConverter.swift */,
 				728242F7FC5A91BF74341428 /* APIService.swift */,
 			);
 			path = Services;
@@ -88,6 +93,7 @@
 				312B33271F76C4C27274AE1B /* HomeView.swift */,
 				9A6223BD5B3F54E887E7D131 /* PianoRollView.swift */,
 				0843E9D84A8B486EDC9FF6FF /* ProcessingView.swift */,
+				B7E476A0DCD35A8349BC2FDE /* SheetMusicView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -150,12 +156,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D0492F3B5A95F8D5C0D54DC /* ABCConverter.swift in Sources */,
 				1510B6914CDD9FC8418839B4 /* APIService.swift in Sources */,
 				4206198A38B09B5F18249B09 /* ContentView.swift in Sources */,
 				EB2368728C3A492B9F7BD312 /* HomeView.swift in Sources */,
 				E641E9542AC21979BB7FEE79 /* Note.swift in Sources */,
 				FF32F14630F6744209D3993F /* PianoRollView.swift in Sources */,
 				2DA03BB162105B0870596E4E /* ProcessingView.swift in Sources */,
+				540FBFE742A9BF2F7EB8C1A4 /* SheetMusicView.swift in Sources */,
 				ABB5925D4D5838A25E008502 /* YankeApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

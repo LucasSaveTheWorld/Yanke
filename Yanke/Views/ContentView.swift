@@ -24,7 +24,7 @@ struct ContentView: View {
                 ProcessingView(fileName: fileName)
 
             case .result(let notes, let fileName):
-                PianoRollView(notes: notes, fileName: fileName)
+                SheetMusicView(notes: notes, fileName: fileName)
                     .navigationTitle("燕歌")
                     .navigationBarTitleDisplayMode(.inline)
                     .toolbar {
